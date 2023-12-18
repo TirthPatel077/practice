@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{% static './css/bootstrap.min.css' %} "
+    />
+    <link rel="stylesheet" href="{% static "./css/style.css" %}" />
+    <title>{{new}}</title>
+  </head>
+  <body>
+    
+    <div class="card text-center Navbar sticky-top">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="true"
+                href="Home.html"
+                >{{new}}</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Online Test</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'sankuu'}" > Academics </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  href="#"
+                  class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                  id="dropdownUser2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://github.com/mdo.png"
+                    alt=""
+                    width="32"
+                    height="32"
+                    class="rounded-circle me-2"
+                  />
+                  <strong>mdo</strong>
+                </a>
+                <ul
+                  class="dropdown-menu text-small shadow"
+                  aria-labelledby="dropdownUser2"
+                >
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+  
+        </div>
+    <script
+    src="/static/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
+<div>
+
+</div>
